@@ -1,15 +1,13 @@
-package com.anshuman.bharatagro
+package com.anshuman.bharatagro.Activitys
 
 import android.os.Bundle
-
 import androidx.appcompat.app.AppCompatActivity
+import com.anshuman.bharatagro.R
 
-
-class MainActivity : AppCompatActivity() {
+class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sign_up)
 
 
 
