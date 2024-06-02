@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.anshuman.bharatagro.R
 
 class SplashScreen : AppCompatActivity() {
-
     private val splashDuration: Long = 3000 // 3seconds
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
         // TODO 1 redrict to the start screen with 3 sec automatically
+
         // Handler to delay the launch of the MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
             // Start MainActivity

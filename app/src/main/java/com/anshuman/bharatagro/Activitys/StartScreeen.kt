@@ -10,7 +10,7 @@ import com.anshuman.bharatagro.R
 import com.anshuman.bharatagro.databinding.ActivityStartScreeenBinding
 
 class StartScreeen : AppCompatActivity() {
-
+// TODO 2 crete the Start screen With lotify annimation
     lateinit var binding: ActivityStartScreeenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +21,5 @@ class StartScreeen : AppCompatActivity() {
         binding.btngetstarted.setOnClickListener{
             startActivity(Intent(this,Loginpage::class.java))
         }
-
-
-
-
-
     }
 }
