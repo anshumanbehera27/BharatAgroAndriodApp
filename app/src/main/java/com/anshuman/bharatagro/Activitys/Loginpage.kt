@@ -22,6 +22,10 @@ class Loginpage : AppCompatActivity() {
             startActivity(Intent(this,SignUp::class.java))
         }
 
+        binding.btnlogin.setOnClickListener{
+            startActivity(Intent(this ,MainActivity::class.java))
+        }
+
 
 
 
