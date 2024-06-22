@@ -3,8 +3,7 @@ package com.anshuman.bharatagro.Activitys
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.anshuman.bharatagro.MainActivity
-import com.anshuman.bharatagro.R
+import com.anshuman.bharatagro.HomeActivity
 import com.anshuman.bharatagro.databinding.ActivitySignUpBinding
 
 class SignUp : AppCompatActivity() {
@@ -16,7 +15,7 @@ class SignUp : AppCompatActivity() {
 
         // redrict to the Home page
         binding.btnsinup.setOnClickListener{
-            startActivity(Intent(this ,MainActivity::class.java))
+            startActivity(Intent(this ,HomeActivity::class.java))
         }
         // redrict to the main page
         binding.btnlogin.setOnClickListener{
