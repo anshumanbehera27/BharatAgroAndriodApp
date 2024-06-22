@@ -55,5 +55,9 @@ dependencies {
     // Add the lotify libabry for the annimation
     implementation (libs.lottie)
 
+    // add the  cricular view
+    implementation (libs.material.v140)
+
+
 
 }
