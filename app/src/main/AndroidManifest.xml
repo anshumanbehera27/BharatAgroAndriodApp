@@ -13,6 +13,18 @@
         android:theme="@style/Theme.BharatAgro"
         tools:targetApi="31">
         <activity
+            android:name=".Activitys.fertilizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.crop_predictionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SoilreportsCenter"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.SignUp"
             android:exported="false" />
         <activity

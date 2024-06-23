@@ -1,5 +1,6 @@
 package com.anshuman.bharatagro.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,6 +14,10 @@ import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.anshuman.bharatagro.Activitys.SoilreportsCenter
+import com.anshuman.bharatagro.Activitys.WeatherActivity
+import com.anshuman.bharatagro.Activitys.crop_predictionActivity
+import com.anshuman.bharatagro.Activitys.fertilizationActivity
 import com.anshuman.bharatagro.Adapters.CropAdapter
 import com.anshuman.bharatagro.Model.Crops
 import com.anshuman.bharatagro.R
@@ -21,6 +26,11 @@ class home_fragments : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var cropAdapter: CropAdapter
+    private lateinit var  cardMySoilreportCenter: com.google.android.material.card.MaterialCardView
+    private lateinit var  cardWeather: com.google.android.material.card.MaterialCardView
+    private lateinit var  cardCropPrediction: com.google.android.material.card.MaterialCardView
+    private lateinit var  cardFertilizerPrediction: com.google.android.material.card.MaterialCardView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -45,6 +55,37 @@ class home_fragments : Fragment() {
         // Initialize CropAdapter  which will be used to populate the RecyclerView
         cropAdapter = CropAdapter(crops)
         recyclerView.adapter = cropAdapter
+
+
+        // Initialize the CardViews
+        cardMySoilreportCenter = view.findViewById(R.id.cardMySoilreportCenter)
+        cardWeather = view.findViewById(R.id.cardWeather)
+        cardCropPrediction = view.findViewById(R.id.cardCropPrediction)
+        cardFertilizerPrediction = view.findViewById(R.id.cardFertilizerPrediction)
+
+
+        // Make the Redrict to the new activity
+        cardMySoilreportCenter.setOnClickListener {
+            val intent = Intent(activity, SoilreportsCenter::class.java)
+            startActivity(intent)
+        }
+
+        cardWeather.setOnClickListener{
+            val intent = Intent(activity, WeatherActivity::class.java)
+            startActivity(intent)
+        }
+
+        cardCropPrediction.setOnClickListener{
+            val intent = Intent(activity, crop_predictionActivity::class.java)
+            startActivity(intent)
+        }
+
+        cardFertilizerPrediction.setOnClickListener{
+            val intent = Intent(activity, fertilizationActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         // Set up the Toolbar
         val toolbar: Toolbar = view.findViewById(R.id.toolbar)
