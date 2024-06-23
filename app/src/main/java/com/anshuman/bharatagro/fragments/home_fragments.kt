@@ -84,9 +84,6 @@ class home_fragments : Fragment() {
             val intent = Intent(activity, fertilizationActivity::class.java)
             startActivity(intent)
         }
-
-
-
         // Set up the Toolbar
         val toolbar: Toolbar = view.findViewById(R.id.toolbar)
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
