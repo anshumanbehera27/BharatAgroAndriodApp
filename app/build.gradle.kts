@@ -58,6 +58,24 @@ dependencies {
     // add the  cricular view
     implementation (libs.material.v140)
 
+    // add for the google Maps
+    implementation (libs.play.services.location)
+
+
+    // retrofit dependency
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation (libs.volley)
+
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
+
+
+
+
+
 
 
 }
