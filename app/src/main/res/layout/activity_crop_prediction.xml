@@ -29,15 +29,20 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+
+
+
+            >
 
             <!-- Nitrogen Section -->
+
             <TextView
-                android:id="@+id/textViewNitrogen"
+                android:id="@+id/textViewtemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Nitrogen"
                 android:textSize="20dp"
                 android:textStyle="bold"
@@ -50,19 +55,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/for_crop_data"
-                android:value="20.0"
-                android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:value="20"
+                android:valueFrom="0"
+                android:valueTo="100"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textViewNitrogen" />
+                app:layout_constraintTop_toBottomOf="@id/textViewtemp" />
 
             <TextView
                 android:id="@+id/resultNitrogen"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Selected result is 20"
+                android:text= ""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/sliderNitrogen" />
@@ -86,9 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/for_crop_data"
-                android:value="20.0"
-                android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:value="20"
+                android:valueFrom="0"
+                android:valueTo="100"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewPhosphorus" />
@@ -122,9 +127,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/for_crop_data"
-                android:value="20.0"
-                android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:value="20"
+                android:valueFrom="0"
+                android:valueTo="100"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewPotassium" />
@@ -158,9 +163,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/for_crop_data"
-                android:value="20.0"
-                android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:value="0"
+                android:valueFrom="0"
+                android:valueTo="100"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewTemperature" />
@@ -230,9 +235,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/for_crop_data"
-                android:value="20.0"
+                android:value="0.0"
                 android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:valueTo="7.0"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewPh" />
@@ -268,7 +273,7 @@
                 android:contentDescription="@string/for_crop_data"
                 android:value="20.0"
                 android:valueFrom="0.0"
-                android:valueTo="100.0"
+                android:valueTo="150.0"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textViewRainfall" />
@@ -282,7 +287,36 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/sliderRainfall" />
-            
+
+
+
+<!--  Create an predit button to make it more to find the result -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cropPrediction"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="predict"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_backgroud1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resultRainFall"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_finalResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello your result is "
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/btn_cropPrediction"
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
