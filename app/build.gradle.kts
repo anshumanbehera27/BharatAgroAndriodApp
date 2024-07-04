@@ -71,6 +71,20 @@ dependencies {
     implementation ("com.squareup.okhttp3:okhttp:4.9.3")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
+    // add the Gemeni Dependency
+    implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("org.json:json:20210307")
+
+
+    // Kotlinx Coroutines Core
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+
+// Kotlinx Coroutines Android
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
+
+
 
 
 
