@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BharatAgro"
 include(":app")
+include(":admin_bharatagro")
