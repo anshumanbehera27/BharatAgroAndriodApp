@@ -14,4 +14,23 @@
     <string name="enter_city_name">Enter City Name</string>
     <string name="for_crop_data">for crop data</string>
 
+<!--  String for the Profile section  -->
+    <string name="username">Anshuman Behera</string>
+    <string name="bio">As a dedicated farmer, I passionately cultivate healthy and bountiful crops using sustainable practices. I focus on maintaining soil fertility and using eco-friendly techniques to ensure high-quality produce. By integrating modern technology with traditional methods, I aim to achieve optimal yields. Sharing knowledge with fellow farmers, I contribute to improving our community’s agricultural productivity</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="user_information">User Information</string>
+    <string name="username_">Username</string>
+    <string name="anshuman">Anshuman</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="age">Age</string>
+    <string name="_21">21</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="_07_02_2003">07/02/2003</string>
+    <string name="mobile">Mobile</string>
+    <string name="_91_9000000009">+91 9000000009</string>
+    <string name="email">Email</string>
+    <string name="axxxxxxa_gmail_com">axxxxxxa@gmail.com</string>
+
 </resources>

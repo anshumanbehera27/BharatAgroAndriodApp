@@ -21,7 +21,5 @@ class SignUp : AppCompatActivity() {
         binding.btnlogin.setOnClickListener{
             startActivity(Intent(this , Loginpage::class.java))
         }
-
-
     }
 }
