@@ -1,5 +1,6 @@
 # Bharat Agro
-![Bharat Agro Logo](images/app_logo.svg)
+<img src="images/app_logo.svg" alt="Bharat Agro Logo" width="150"/>
+
 
 # Introduction
 
@@ -35,22 +36,30 @@ Technologies used in the project:
 
 ## 📷 App Design
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/a.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/b.jpg?raw=true" width="120" height="267"alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/c.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/d.jpg?raw=true" width="120" height="267" alt=""> 
+  <img src="images/img.png" width="120" height="267" alt=""> 
+  <img src="images/startpage.png" width="120" height="267" alt="">
+  <img src="images/login.png" width="120" height="267"alt="">
+  <img src="images/signup.png" width="120" height="267" alt="">
+  
 </div>
 <br>
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/e.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/f.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/g.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/h.jpg?raw=true" width="120" height="267" alt="">
+  <img src="images/Homepage.png" width="120" height="267" alt="">
+  <img src="images/SoilReport.png" width="120" height="267" alt="">
+  <img src="images/CropPrediction .png" width="120" height="267" alt="">
+  <img src="images/FertilazationPrediction.png" width="120" height="267" alt="">
 </div>
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/i.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/j.jpg?raw=true" width="120" height="267" alt="">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/k.jpg?raw=true" width="120" height="267" alt="">  
+  <img src="images/weather.png" width="120" height="267" alt="">
+  <img src="images/infoSection.png" width="120" height="267" alt="">
+  <img src="images/info_deatils.png" width="120" height="267" alt="">  
+  <img src="images/profileSection.png" width="120" height="267" alt="">  
+  
+</div>
+<div align="center">
+  <img src="images/Chartbot.png" width="120" height="267" alt="">
+ 
+  
 </div>
 
 
