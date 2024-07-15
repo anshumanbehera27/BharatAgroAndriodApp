@@ -35,22 +35,22 @@ Technologies used in the project:
 
 ## 📷 App Design
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/a.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/b.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/c.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/d.jpg?raw=true" width="120" height="267"> 
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/a.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/b.jpg?raw=true" width="120" height="267"alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/c.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/d.jpg?raw=true" width="120" height="267" alt=""> 
 </div>
 <br>
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/e.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/f.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/g.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/h.jpg?raw=true" width="120" height="267">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/e.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/f.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/g.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/h.jpg?raw=true" width="120" height="267" alt="">
 </div>
 <div align="center">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/i.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/j.jpg?raw=true" width="120" height="267">
-  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/k.jpg?raw=true" width="120" height="267">  
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/i.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/j.jpg?raw=true" width="120" height="267" alt="">
+  <img src="https://github.com/Agrawal-Ayush-009/Flatmate_Finder/blob/master/app/src/main/res/drawable/k.jpg?raw=true" width="120" height="267" alt="">  
 </div>
 
 
