@@ -26,7 +26,7 @@
       </SelectionState>
       <SelectionState runConfigName="admin_bharatagro">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-07-06T16:40:03.186839600Z">
+        <DropdownSelection timestamp="2024-07-15T17:46:04.096858200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Anshuman Behera\.android\avd\Pixel_6a_API_35.avd" />

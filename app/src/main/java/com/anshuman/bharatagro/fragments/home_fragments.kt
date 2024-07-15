@@ -47,9 +47,12 @@ class home_fragments : Fragment() {
             Crops(R.drawable.rice, "Rice"),
             Crops(R.drawable.wheat, "Wheat"),
             Crops(R.drawable.sugarcane, "Sugarcane"),
-            Crops(R.drawable.rice, "Rice"),
-            Crops(R.drawable.wheat, "Wheat"),
-            Crops(R.drawable.sugarcane, "Sugarcane")
+            Crops(R.drawable.sunflower , "SunFlower"),
+            Crops(R.drawable.urad , "Urad"),
+            Crops(R.drawable.moong, "Moong"),
+            Crops(R.drawable.paddy , "Paddy"),
+            Crops(R.drawable.maize , "Maize"),
+            Crops(R.drawable.jute , "Jute")
 
         )
         // Initialize CropAdapter  which will be used to populate the RecyclerView

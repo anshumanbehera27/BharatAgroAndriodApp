@@ -15,12 +15,10 @@ import com.bumptech.glide.Glide
 
 class InfoAdapter(private val context: Context, private val dataList: ArrayList<RetrieveData>) :
     RecyclerView.Adapter<InfoAdapter.InfoViewHolder>() {
-
     // Define interface for item click handling
     interface OnItemClickListener {
         fun onItemClick(item: RetrieveData)
     }
-
     // Listener variable
     private var listener: OnItemClickListener? = null
 
