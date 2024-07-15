@@ -32,5 +32,6 @@
     <string name="_91_9000000009">+91 9000000009</string>
     <string name="email">Email</string>
     <string name="axxxxxxa_gmail_com">axxxxxxa@gmail.com</string>
+    <string name="textview">TextView</string>
 
 </resources>
