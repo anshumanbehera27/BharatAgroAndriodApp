@@ -34,33 +34,27 @@ Technologies used in the project:
 - Meterial 3 desine
 
 
-## 📷 App Design
-<div align="center">
-  <img src="images/img.png" width="120" height="267" alt=""> 
-  <img src="images/startpage.png" width="120" height="267" alt="">
-  <img src="images/login.png" width="120" height="267"alt="">
-  <img src="images/signup.png" width="120" height="267" alt="">
-  
-</div>
-<br>
-<div align="center">
-  <img src="images/Homepage.png" width="120" height="267" alt="">
-  <img src="images/SoilReport.png" width="120" height="267" alt="">
-  <img src="images/CropPrediction .png" width="120" height="267" alt="">
-  <img src="images/FertilazationPrediction.png" width="120" height="267" alt="">
-</div>
-<div align="center">
-  <img src="images/weather.png" width="120" height="267" alt="">
-  <img src="images/infoSection.png" width="120" height="267" alt="">
-  <img src="images/info_deatils.png" width="120" height="267" alt="">  
-  <img src="images/profileSection.png" width="120" height="267" alt="">  
-  
-</div>
-<div align="center">
-  <img src="images/Chartbot.png" width="120" height="267" alt="">
- 
-  
-</div>
+## 📷 App Features
+
+| <img src="images/img.png" alt="App Image" width="220" height="420"> | <img src="images/startpage.png" alt="Start Page" width="220" height="420"> | <img src="images/login.png" alt="Login Page" width="220" height="420"> |
+|:---:|:---:|:---:|
+| App Image | Start Page | Login Page |
+
+| <img src="images/signup.png" alt="Sign Up Page" width="220" height="420"> | <img src="images/Homepage.png" alt="Home Page" width="220" height="420"> | <img src="images/SoilReport.png" alt="Soil Report" width="220" height="420"> |
+|:---:|:---:|:---:|
+| Sign Up Page | Home Page | Soil Report |
+
+| <img src="images/CropPrediction .png" alt="Crop Prediction" width="220" height="420"> | <img src="images/FertilazationPrediction.png" alt="Fertilization Prediction" width="220" height="420"> | <img src="images/weather.png" alt="Weather" width="220" height="420"> |
+|:---:|:---:|:---:|
+| Crop Prediction | Fertilization Prediction | Weather |
+
+| <img src="images/infoSection.png" alt="Information Section" width="220" height="420"> | <img src="images/info_deatils.png" alt="Information Details" width="220" height="420"> | <img src="images/profileSection.png" alt="Profile Section" width="220" height="420"> |
+|:---:|:---:|:---:|
+| Information Section | Information Details | Profile Section |
+
+| <img src="images/Chartbot.png" alt="Chartbot" width="220" height="420"> |
+|:---:|
+| Chartbot |
 
 
 
