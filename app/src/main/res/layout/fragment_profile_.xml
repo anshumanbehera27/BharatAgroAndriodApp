@@ -83,6 +83,12 @@
                         android:text="Edit Profile"
                         android:fontFamily="@font/poppinsmedium"/>
 
+                    <Button
+                        android:id="@+id/buttonsignout"
+                        android:layout_width="345dp"
+                        android:layout_height="43dp"
+                        android:text="SignOut" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

@@ -13,9 +13,9 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="fertilizationActivity">
+      <SelectionState runConfigName="admin_bharatagro">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-07-02T10:08:19.056882200Z">
+        <DropdownSelection timestamp="2024-07-15T17:46:04.096858200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Anshuman Behera\.android\avd\Pixel_6a_API_35.avd" />
@@ -24,9 +24,9 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="admin_bharatagro">
+      <SelectionState runConfigName="Loginpage">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-07-15T17:46:04.096858200Z">
+        <DropdownSelection timestamp="2024-08-01T17:46:46.274808900Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Anshuman Behera\.android\avd\Pixel_6a_API_35.avd" />
