@@ -142,15 +142,21 @@ class crop_predictionActivity : AppCompatActivity() {
             val rainfall = binding.resultRainFall.text.toString().split(":")[1].trim()
 
             val url = "https://agro-api-xnfo.onrender.com/predictcrop"
+            /// Ensure all required fields are available and valid
+                if (ph.isEmpty()) {
+                    binding.tvFinalResult.text = "pH value is missing."
+                    Toast.makeText(this , "Ph is missing " ,Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
 
             val requestBody = JSONObject()
             try {
-                requestBody.put("Nitrogen", nitrogen.toFloat())
-                requestBody.put("Phosphorus", phosphorus.toFloat())
-                requestBody.put("Potassium", potassium.toFloat())
+                requestBody.put("Nitrogen", nitrogen.toFloat().toDouble())
+                requestBody.put("Phosphorus", phosphorus.toFloat().toDouble())
+                requestBody.put("Potassium", potassium.toFloat().toDouble())
                 requestBody.put("Temperature", temperature.toDouble())
                 requestBody.put("Humidity", humidity.toDouble())
-                requestBody.put("pH", ph.toDouble())
+                requestBody.put("Ph", ph.toDouble())
                 requestBody.put("Rainfall", rainfall.toDouble())
                 println("Request Body: $requestBody")
             } catch (e: JSONException) {
@@ -205,6 +211,7 @@ class crop_predictionActivity : AppCompatActivity() {
             val queue: RequestQueue = Volley.newRequestQueue(this@crop_predictionActivity)
             queue.add(jsonObjectRequest)
         }
+
 
 
 

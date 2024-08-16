@@ -7,7 +7,6 @@ import com.android.volley.RetryPolicy
 import okhttp3.*
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.android.volley.*
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
@@ -15,7 +14,6 @@ import com.anshuman.bharatagro.databinding.ActivityFertilizationBinding
 import com.google.android.material.slider.Slider
 import org.json.JSONException
 import org.json.JSONObject
-
 
 class fertilizationActivity : AppCompatActivity() {
     lateinit var binding: ActivityFertilizationBinding
@@ -42,7 +40,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultTemperature.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultTemperature.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
 
@@ -53,7 +52,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultHumidity.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultHumidity.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
 
@@ -64,7 +64,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultSoilMoisture.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultSoilMoisture.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
 
@@ -75,7 +76,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultNitrogen.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultNitrogen.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
 
@@ -86,7 +88,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultPhosphorous.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultPhosphorous.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
 
@@ -97,7 +100,8 @@ class fertilizationActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(slider: Slider) {
                 val finalSliderValue = slider.value
-                binding.tvresultPotassium.text = String.format("Selected Slider: %.2f", finalSliderValue)
+                binding.tvresultPotassium.text =
+                    String.format("Selected Slider: %.2f", finalSliderValue)
             }
         })
     }
@@ -105,24 +109,42 @@ class fertilizationActivity : AppCompatActivity() {
 
     private fun getEnteredData(): Map<String, Any> {
         val data = mutableMapOf<String, Any>()
-        data["temperature"] = binding.sliderTemperature.value
-        data["humidity"] = binding.sliderHumidity.value
-        data["soilMoisture"] = binding.sliderSoilMoisture.value
-        data["soilType"] = binding.editTextSoilType.text.toString()
-        data["cropType"] = binding.editTextCropType.text.toString()
-        data["nitrogen"] = binding.sliderNitrogen.value
-        data["phosphorous"] = binding.sliderPhosphorous.value
-        data["potassium"] = binding.sliderPotassium.value
+
+        // Ensure Temperature is correctly added
+        val temperatureValue = binding.sliderTemperature.value
+        if (temperatureValue != null) {
+            data["Temperature"] = temperatureValue
+        } else {
+            // Handle case where Temperature is not available or valid
+            binding.tvPredictResult.text = "Temperature value is missing."
+            return emptyMap() // Return an empty map to prevent sending an incomplete request
+        }
+
+        data["Humidity"] = binding.sliderHumidity.value
+        data["SoilMoisture"] = binding.sliderSoilMoisture.value
+        data["soil_type"] = binding.editTextSoilType.text.toString()
+        data["crop_type"] = binding.editTextCropType.text.toString()
+        data["Nitrogen"] = binding.sliderNitrogen.value
+        data["Phosphorus"] = binding.sliderPhosphorous.value
+        data["Potassium"] = binding.sliderPotassium.value
+
         return data
     }
 
     private fun sendRequest(data: Map<String, Any>) {
+        if (data.isEmpty()) {
+            // If data is empty, don't proceed with the request
+            binding.tvPredictResult.text = "Cannot send request, missing required fields."
+            return
+        }
+
         val json = JSONObject(data)
         val requestBody = json.toString()
 
         runOnUiThread {
             binding.tvPredictResult.text = "Sending data: $requestBody"
         }
+
         val jsonObjectRequest = object : JsonObjectRequest(
             Method.POST, url, json,
             Response.Listener { response ->
